@@ -39,6 +39,6 @@ public class exercicio{
         }else{
             classificacao = "OBESIDADE GRAU III";
         }
-        System.out.println(nome+" tem "+ altura + " de altura e pesa "+peso+" kg.o seu IMC é " + imc +".Sua situação é "+classificacao );
+        System.out.println(nome + " tem "+ altura + " de altura e pesa " + peso + " kg.o seu IMC é " + imc + ".Sua situação é "+classificacao );
     }
 }
