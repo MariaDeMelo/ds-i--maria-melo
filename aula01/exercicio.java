@@ -2,23 +2,23 @@ package aula01;
 
 import java.util.Scanner;
 
-public class exercicio{
+public class Exercicio{
     public static void main(String[] args) {
-        Scanner myobj = new Scanner(System.in);
-        int peso;
+        Scanner Myobj = new Scanner(System.in);
+        double peso;
         double cm;
         String nome;
         String classificacao;
 
         System.out.println("Qual é o seu nome?");
-        nome = myobj.nextLine();
+        nome = Myobj.nextLine();
 
 
         System.out.println("Qual é o seu peso?");
-        peso = myobj.nextInt();
+        peso = Myobj.nextInt();
 
         System.out.println("Qual é a sua altura em centimetro?");
-        cm = myobj.nextDouble();
+        cm = Myobj.nextDouble();
         
         double altura = cm/100;
 
