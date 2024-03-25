@@ -2,7 +2,7 @@ package aula01;
 
 import java.util.Scanner;
 
-public class Exercicio{
+public class ExercicioIMC{
     public static void main(String[] args) {
         Scanner Myobj = new Scanner(System.in);
         double peso;
