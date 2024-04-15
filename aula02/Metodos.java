@@ -1,3 +1,5 @@
+//package aula02;
+
 public class Metodos {
     static void meuMetodo(){
         System.out.println("Assim funciona um metodos");
