@@ -29,7 +29,7 @@ public class Imcswing {
         }
 
         String imc2= new Double(imc).toString();
-        String output =" prazer em te chonhecer"+ name+"seu imc é "+imc2+" ,voce está"+classificacao;
+        String output =" prazer em te conhecer "+ name+" seu imc é "+imc2+" ,voce está "+classificacao;
         JOptionPane.showConfirmDialog(null, output);
     }
 }
