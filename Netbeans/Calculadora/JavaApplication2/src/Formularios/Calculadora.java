@@ -23,9 +23,9 @@ void Desabilitar(){
     txt_res.setEditable(false);
 }
 void Habilitar(){
-    txt_N1.setEditable(false);
-    txt_n2.setEditable(false);
-    txt_res.setEditable(false);
+    txt_N1.setEditable(true);
+    txt_n2.setEditable(true);
+    txt_res.setEditable(true);
 }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -63,7 +63,7 @@ void Habilitar(){
         jMenu1.setText("jMenu1");
 
         jMenu2.setBackground(new java.awt.Color(153, 255, 153));
-        jMenu2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
+        jMenu2.setBorder(javax.swing.BorderFactory.createTitledBorder(null));
         jMenu2.setText("jMenu2");
 
         jLabel4.setText("jLabel4");
@@ -82,14 +82,13 @@ void Habilitar(){
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(153, 255, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 14), new java.awt.Color(102, 255, 102))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, new java.awt.Font("Tahoma", 0, 14), new java.awt.Color(102, 255, 102))); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 102, 255));
         jLabel1.setText("N1");
 
         txt_N1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        txt_N1.setText("numero1");
         txt_N1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_N1ActionPerformed(evt);
@@ -174,7 +173,7 @@ void Habilitar(){
         jLabel5.setText("Resultado");
 
         txt_n2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        txt_n2.setText("numero2");
+        txt_n2.setText(n2);
         txt_n2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_n2ActionPerformed(evt);
@@ -265,7 +264,6 @@ void Habilitar(){
         );
 
         txt_N1.getAccessibleContext().setAccessibleName("numero1");
-        txt_N1.getAccessibleContext().setAccessibleParent(null);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
