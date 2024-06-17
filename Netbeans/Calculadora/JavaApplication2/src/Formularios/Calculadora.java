@@ -51,7 +51,6 @@ void Habilitar(){
         btn_Multiplicacao = new javax.swing.JButton();
         txt_res = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        btn_Novo = new javax.swing.JButton();
         btn_Limpar = new javax.swing.JButton();
         btn_Sair = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
@@ -63,7 +62,7 @@ void Habilitar(){
         jMenu1.setText("jMenu1");
 
         jMenu2.setBackground(new java.awt.Color(153, 255, 153));
-        jMenu2.setBorder(javax.swing.BorderFactory.createTitledBorder(null));
+        jMenu2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
         jMenu2.setText("jMenu2");
 
         jLabel4.setText("jLabel4");
@@ -82,7 +81,7 @@ void Habilitar(){
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(153, 255, 153));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, null, null, null, new java.awt.Font("Tahoma", 0, 14), new java.awt.Color(102, 255, 102))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 14), new java.awt.Color(102, 255, 102))); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(102, 102, 255));
@@ -143,15 +142,6 @@ void Habilitar(){
         jLabel2.setForeground(new java.awt.Color(204, 204, 0));
         jLabel2.setText("Programação de Computadores");
 
-        btn_Novo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        btn_Novo.setText("Novo");
-        btn_Novo.setActionCommand("");
-        btn_Novo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btn_NovoActionPerformed(evt);
-            }
-        });
-
         btn_Limpar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn_Limpar.setText("Limpar");
         btn_Limpar.addActionListener(new java.awt.event.ActionListener() {
@@ -173,7 +163,6 @@ void Habilitar(){
         jLabel5.setText("Resultado");
 
         txt_n2.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        txt_n2.setText(n2);
         txt_n2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txt_n2ActionPerformed(evt);
@@ -190,7 +179,7 @@ void Habilitar(){
                         .addGap(159, 159, 159)
                         .addComponent(jLabel2))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(137, 137, 137)
+                        .addGap(150, 150, 150)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(btn_Soma)
@@ -198,8 +187,6 @@ void Habilitar(){
                                 .addComponent(btn_Subtracao)
                                 .addGap(104, 104, 104))
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(btn_Novo)
-                                .addGap(41, 41, 41)
                                 .addComponent(btn_Limpar)
                                 .addGap(56, 56, 56)))
                         .addComponent(btn_Sair))
@@ -252,7 +239,6 @@ void Habilitar(){
                     .addComponent(btn_Soma))
                 .addGap(42, 42, 42)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_Novo)
                     .addComponent(btn_Limpar)
                     .addComponent(btn_Sair))
                 .addContainerGap(128, Short.MAX_VALUE))
@@ -349,10 +335,6 @@ void Habilitar(){
         // TODO add your handling code here:
     }//GEN-LAST:event_txt_resActionPerformed
 
-    private void btn_NovoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_NovoActionPerformed
-        Habilitar();
-    }//GEN-LAST:event_btn_NovoActionPerformed
-
     private void btn_LimparActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_LimparActionPerformed
         txt_N1.setText("");
         txt_n2.setText("");
@@ -406,7 +388,6 @@ void Habilitar(){
     private javax.swing.JButton btn_Divisao;
     private javax.swing.JButton btn_Limpar;
     private javax.swing.JButton btn_Multiplicacao;
-    private javax.swing.JButton btn_Novo;
     private javax.swing.JButton btn_Sair;
     private javax.swing.JButton btn_Soma;
     private javax.swing.JButton btn_Subtracao;
